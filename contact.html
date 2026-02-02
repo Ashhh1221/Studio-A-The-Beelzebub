@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&family=Sail&family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="top-bar">
+        <div class="social-icons">
+            <a href="https://www.facebook.com/share/16YCmY9gny/?mibextid=wwXIfr" target="_blank">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/kyaww_wll?igsh=MWN2NnJmam90NGhl&utm_source=qr" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://x.com/ohmyjeenie?s=21&t=EUvCAxo7GIC3YiRAHEOI4A" target="_blank">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+        </div>
+
+        <div class="logo">Studio - A</div>
+
+        <div class="right-icons">
+            <i class="fa fa-search"></i>
+            <i class="fa fa-shopping-cart"></i>
+        </div>
+    </header>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="home.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="blog.html">Blog</a>
+    </nav>
+
+    <section class="contact-section">
+        <div class="contact-left">
+            <img src="Logo/Social.png" alt="Contact Illustration">
+            <div class="contact-text">
+                <h1>Your Next Event <br> Starts Here!</h1>
+                <p>No matter what your needs are, we’re here to help you run seamless, smarter events.</p>
+            </div>
+        </div>
+
+        <div class="contact-right">
+            <div class="contact-card">
+                <h2>Contact Us</h2>
+
+                <!-- Message from JS -->
+                <p id="form-message" class="hide"></p>
+
+                <form id="contactForm">
+                    <div class="row">
+                        <input type="text" name="fname" placeholder="First Name" required>
+                        <input type="text" name="lname" placeholder="Last Name" required>
+                    </div>
+
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="text" name="company" placeholder="Company Name" required>
+                    <input type="text" name="phone" placeholder="Phone Number" required>
+
+                    <select name="event_type" required>
+                        <option value="">What type of event?</option>
+                        <option>Conference</option>
+                        <option>Concert</option>
+                        <option>Workshop</option>
+                        <option>Other</option>
+                    </select>
+
+                    <input type="text" name="country" placeholder="Country" required>
+
+                    <select name="solution" required>
+                        <option value="">What solution are you interested in?</option>
+                        <option>Ticketing</option>
+                        <option>Marketing</option>
+                        <option>Registration</option>
+                        <option>Other</option>
+                    </select>
+
+                    <input type="number" name="attendees" placeholder="Number of attendees" required>
+
+                    <textarea name="inquiry" rows="4" placeholder="Tell us more about your inquiry"></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="highline-footer">
+        <div class="footer-links">
+            <a href="#">FAQ</a>
+            <a href="#">Tickets</a>
+            <a href="#">Events</a>
+            <a href="#">Contact</a>
+            <a href="#">Terms & Privacy</a>
+        </div>
+
+        <div class="social-icon">
+            <a href="https://www.facebook.com/share/16YCmY9gny/?mibextid=wwXIfr"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/kyaww_wll?igsh=MWN2NnJmam90NGhl&utm_source=qr"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+        </div>
+
+        <div class="footer-credit">
+            <p>Site by Highline Studio</p>
+            <p>© 2025 Highline Film. All rights reserved.</p>
+            <p><a href="#">Legal Notice</a></p>
+        </div>
+
+        <div class="payment-icon">
+             <i class="fa-brands fa-cc-visa"></i>
+             <i class="fa-brands fa-paypal"></i>
+             <i class="fa-brands fa-cc-mastercard"></i>
+             <i class="fa-solid fa-money-bill-transfer"></i>
+             <i class="fa-solid fa-credit-card"></i>
+        </div>
+    </footer>    
+    <script src="contact.js"></script>
+</body>
+</html>

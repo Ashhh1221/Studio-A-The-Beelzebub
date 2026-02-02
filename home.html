@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio A - Gallery</title>
+
+    <link rel="stylesheet" href="home.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&family=Sail&family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="top-bar">
+        <div class="social-icons">
+            <a href="https://www.facebook.com/share/16YCmY9gny/?mibextid=wwXIfr" target="_blank">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/kyaww_wll?igsh=MWN2NnJmam90NGhl&utm_source=qr" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://x.com/ohmyjeenie?s=21&t=EUvCAxo7GIC3YiRAHEOI4A" target="_blank">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+        </div>
+
+        <div class="logo">Studio - A</div>
+
+        <div class="right-icons">
+            <i class="fa fa-search" id="search-btn"></i>
+            <i class="fa fa-shopping-cart"></i>
+        </div>
+    </header>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="home.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="blog.html">Blog</a>
+    </nav>
+    <div class="search-box" id="search-box">
+        <input type="text" placeholder="Search...">
+        <button id="close-search">X</button>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <img src="photo/P16.jpg" class="hero-img">
+        <div class="hero-buttons">
+            <button class="btn" onclick="window.location.href='gallery.html'">Gallery</button>
+            <button class="btn" onclick="document.getElementById('gallery').scrollIntoView({ behavior: 'smooth' })">
+                Explore more
+            </button>
+        </div>
+    </section>
+
+    <!-- SECTION 1 -->
+    <section class="section-split">
+        <div class="about-row">
+            <div class="about-text">
+                <h2>About Our Studio</h2>
+                <p>
+                    We capture the beauty of everyday life through creative photography,
+                    blending modern composition with emotional storytelling.
+                </p>
+            </div>
+
+            <div class="about-img">
+                <img src="h-2.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="about-row">
+            <div class="about-img">
+                <img src="h-3.jpg" alt="">
+            </div>
+
+            <div class="about-text">
+                <h2>About Our Studio</h2>
+                <p>
+                    We capture the beauty of everyday life through creative photography,
+                    blending modern composition with emotional storytelling.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <h1 class="g-heading"> Gallery </h1>
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="silder-wrapper">
+                <button id="prev-slide" class="slide-button material-symbols-rounded"><i class="fa-solid fa-angle-left"></i></button>
+                <div class="image-list">
+                        <img src="images/Col 7.jpg" alt="img-1" class="imge-item">
+                        <img src="photo/P12.jpg" alt="img-2" class="imge-item">
+                        <img src="photo/P14.jpg" alt="img-3" class="imge-item">
+                        <img src="photo/P20.jpg" alt="img-4" class="imge-item">
+                        <img src="images/Col 5.jpg" alt="img-5" class="imge-item">
+                        <img src="images/Col 9.jpg" alt="img-6" class="imge-item">
+                        <img src="images/F2.jpg" alt="img-7" class="imge-item">
+                        <img src="images/F4.jpg" alt="img-8" class="imge-item">
+                </div>
+                <button id="next-slide" class="slide-button material-symbols-rounded"><i class="fa-solid fa-angle-right"></i></button>
+            </div>
+        
+            <div class="silder-scrollbar">
+                <div class="scrollbar-track">
+                    <div class="scrollbar-thumb">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="highline-footer">
+        <div class="footer-links">
+            <a href="#">FAQ</a>
+            <a href="#">Tickets</a>
+            <a href="#">Events</a>
+            <a href="#">Contact</a>
+            <a href="#">Terms & Privacy</a>
+        </div>
+
+        <div class="social-icon">
+            <a href="https://www.facebook.com/share/16YCmY9gny/?mibextid=wwXIfr"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/kyaww_wll?igsh=MWN2NnJmam90NGhl&utm_source=qr"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+        </div>
+
+        <div class="footer-credit">
+            <p>Site by Highline Studio</p>
+            <p>© 2025 Highline Film. All rights reserved.</p>
+            <p><a href="#">Legal Notice</a></p>
+        </div>
+
+        <div class="payment-icon">
+             <i class="fa-brands fa-cc-visa"></i>
+             <i class="fa-brands fa-paypal"></i>
+             <i class="fa-brands fa-cc-mastercard"></i>
+             <i class="fa-solid fa-money-bill-transfer"></i>
+             <i class="fa-solid fa-credit-card"></i>
+        </div>
+    </footer>
+    <!-- JS -->
+    <script src="home.js"></script>
+
+</body>
+</html>

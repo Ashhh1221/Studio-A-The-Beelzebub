@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    background: #e8ebee;
+    color: #1e1e1e;
+}
+
+/* Top Image */
+.artwork-hero {
+    width: 100%;
+    display: flex;
+    justify-content: center;   /* centers horizontally */
+    align-items: center;       /* centers vertically if height is big */
+    padding: 40px 0;
+}
+
+.artwork-hero img {
+    max-width: 80%;            /* image size responsive */
+    height: auto;
+    display: block;
+    margin: 0 auto;            /* centers fallback */
+    border-radius: 10px;       /* optional */
+}
+
+/* Content Layout */
+.artwork-content {
+    width: 60%;
+    margin: 40px auto;
+}
+
+/* Title */
+.art-title {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+/* Status */
+.status {
+    color: #444;
+    margin-bottom: 20px;
+}
+.status span {
+    color: green;
+    font-size: 14px;
+}
+
+/* Metadata */
+.artist,
+.meta {
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.description {
+    margin: 20px 0 40px 0;
+    line-height: 1.8;
+    color: #333;
+}
+
+/* Accordion */
+.accordion-item {
+    border-top: 1px solid #ccc;
+}
+
+.accordion-header {
+    width: 100%;
+    padding: 18px 0;
+    font-size: 18px;
+    background: none;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+}
+
+.accordion-body {
+    display: none;
+    padding: 10px 0 20px;
+    line-height: 1.7;
+}
+
+/* Tags */
+.tags {
+    margin-top: 40px;
+}
+.tags a {
+    display: inline-block;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 5px 12px;
+    margin: 5px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: #333;
+    text-decoration: none;
+}
+.tags a:hover {
+    background: #f2f2f2;
+}
