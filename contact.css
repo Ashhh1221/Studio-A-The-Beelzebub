@@ -79,6 +79,10 @@ body {
     width: 100%;
 }
 
+.navbar a.active::after {
+  width: 100%;
+}
+
 .social-icons {
     display: flex;
     gap: 4px; /* space between icons */

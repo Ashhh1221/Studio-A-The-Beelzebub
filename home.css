@@ -101,6 +101,9 @@ body {
     width: 100%;
 }
 
+.navbar a.active::after {
+  width: 100%;
+}
 /* Search box (hidden by default) */
 .search-box {
     display: none;

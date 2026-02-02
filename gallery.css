@@ -101,6 +101,10 @@ body {
     width: 100%;
 }
 
+.navbar a.active::after {
+  width: 100%;
+}
+
 .museum-gallery {
     width: 100%;
     padding: 40px 5%;
