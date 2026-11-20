@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Studio A visual story exhibition">
+  <title>Visual Story | Studio A</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="story.css">
+</head>
+<body>
+  <main class="story-page">
+    <section class="exhibition" aria-label="Studio A visual story">
+      <header class="exhibition-header">
+        <a href="home.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back</a>
+        <a href="home.html" class="story-logo">Studio <span>–</span> A</a>
+        <p class="counter"><span id="current-number">01</span> / <span id="total-number">03</span></p>
+      </header>
+
+      <div class="art-stage">
+        <figure class="artwork-frame">
+          <img id="main-artwork" src="photo/P16.jpg" alt="After Rain">
+          <figcaption id="art-caption">After Rain — Bangkok, 2025</figcaption>
+        </figure>
+      </div>
+
+      <article class="story-card" aria-live="polite">
+        <div class="story-scroll">
+          <p class="eyebrow" id="story-category">Street collection · No. 01</p>
+          <h1 id="story-title">After Rain</h1>
+          <p class="meta" id="story-meta">Studio A · Bangkok · 2025</p>
+          <img id="story-image" src="photo/P16.jpg" alt="Detail from After Rain">
+          <div id="story-copy">
+            <p>The city becomes quieter just after the rain. Reflections stretch across the road, signs soften, and ordinary corners begin to feel cinematic.</p>
+            <p>This photograph is part of an ongoing study of passing moments—scenes that may last only a few seconds before traffic, light, and people rearrange them.</p>
+            <blockquote>“A familiar street can become a completely new place when the light changes.”</blockquote>
+            <p>The image was composed to keep that temporary stillness intact: a pause between one movement and the next.</p>
+          </div>
+        </div>
+        <div class="story-controls">
+          <button id="previous-story" aria-label="Previous story"><i class="fa-solid fa-arrow-left"></i></button>
+          <span id="progress-label">01 — 03</span>
+          <button id="next-story" aria-label="Next story"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </article>
+    </section>
+  </main>
+  <script src="story.js"></script>
+</body>
+</html>
